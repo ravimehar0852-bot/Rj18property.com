@@ -196,3 +196,4 @@ const RJ18 = {
     { step: "06", title: "Happy Customer", desc: "You move into your dream property with total peace of mind." }
   ]
 };
+     
