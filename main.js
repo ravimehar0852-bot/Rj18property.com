@@ -5,7 +5,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   injectBusinessBindings();
-  initPreloader();
   initHeader();
   initMobileNav();
   initRippleButtons();
@@ -49,17 +48,6 @@ function injectBusinessBindings() {
   document.querySelectorAll('[data-mail-link]').forEach(el => el.href = `mailto:${b.email}`);
   const mapFrame = document.querySelector('[data-map-frame]');
   if (mapFrame) mapFrame.src = b.mapEmbed;
-}
-
-/* ---------- Preloader ---------- */
-function initPreloader() {
-  const pre = document.getElementById('preloader');
-  if (!pre) return;
-  window.addEventListener('load', () => {
-    setTimeout(() => pre.classList.add('hidden'), 350);
-  });
-  // Fallback in case load event is slow/blocked
-  setTimeout(() => pre.classList.add('hidden'), 2200);
 }
 
 /* ---------- Header scroll state ---------- */
