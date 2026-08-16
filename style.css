@@ -136,6 +136,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
   display:flex; align-items:center; justify-content:center;
   font-family:var(--font-display); font-weight:700; font-size:.95rem;
   letter-spacing:.02em; flex-shrink:0;
+     overflow:hidden;
 }
 .brand-mark img{
   width: 100%;
