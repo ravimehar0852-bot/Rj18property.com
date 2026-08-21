@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rj18propertycom.vercel.app/sitemap.xml
